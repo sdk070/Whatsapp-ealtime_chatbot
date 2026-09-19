@@ -3,17 +3,11 @@
 whatsapp-realtime-chatbot/
 
 ├── README.md            ← full setup guide, config table, production notes
-
 ├── requirements.txt
-
 ├── pytest.ini
-
 ├── .env.example
-
 ├── .gitignore
-
 ├── app/
-
 │   ├── __init__.py
 │   ├── __main__.py      ← python -m app
 │   ├── config.py
