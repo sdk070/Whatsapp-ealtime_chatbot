@@ -89,7 +89,7 @@ class FakeWhatsApp:
         self.read.append(message_id)
 
 
-# ---------------------------------------------------------------- unit tests
+# ---> unit tests
 
 
 def test_verify_signature_accepts_valid_and_rejects_tampered():
@@ -134,7 +134,7 @@ def test_parse_webhook_collects_statuses():
     assert batch.messages
 
 
-# ------------------------------------------------------------------ store
+# ---> store
 
 
 def test_store_history_and_reset(tmp_path):
@@ -162,7 +162,7 @@ def test_store_mark_processed_is_idempotent(tmp_path):
     store.close()
 
 
-# -------------------------------------------------------------------- bot
+# ---> bot
 
 
 @pytest.mark.asyncio
@@ -249,7 +249,7 @@ async def test_llm_failure_sends_fallback(tmp_path):
     store.close()
 
 
-# --------------------------------------------------------- http endpoints
+# ---> http/https endpoints 
 
 
 def test_webhook_verification_handshake(tmp_path):
